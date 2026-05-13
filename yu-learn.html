@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yu-Learn — Learning Management System | Yugarit</title>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <meta name="description" content="Yu-Learn is Yugarit's modern LMS SaaS platform — built for organisations, institutes, and trainers to create, manage, and deliver engaging online learning experiences with live classes, assessments, analytics, and certifications." />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/custom-animate.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome-all.css" />
+    <link rel="stylesheet" href="assets/css/jarallax.css" />
+    <link rel="stylesheet" href="assets/css/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/odometer.min.css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/css/twentytwenty.css" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+
+    <link rel="stylesheet" href="assets/css/module-css/slider.css" />
+    <link rel="stylesheet" href="assets/css/module-css/footer.css" />
+    <link rel="stylesheet" href="assets/css/module-css/banner.css" />
+    <link rel="stylesheet" href="assets/css/module-css/about.css" />
+    <link rel="stylesheet" href="assets/css/module-css/services.css" />
+    <link rel="stylesheet" href="assets/css/module-css/why-choose.css" />
+    <link rel="stylesheet" href="assets/css/module-css/process.css" />
+    <link rel="stylesheet" href="assets/css/module-css/sliding-text.css" />
+    <link rel="stylesheet" href="assets/css/module-css/project.css" />
+    <link rel="stylesheet" href="assets/css/module-css/counter.css" />
+    <link rel="stylesheet" href="assets/css/module-css/team.css" />
+    <link rel="stylesheet" href="assets/css/module-css/brand.css" />
+    <link rel="stylesheet" href="assets/css/module-css/testimonial.css" />
+    <link rel="stylesheet" href="assets/css/module-css/contact.css" />
+    <link rel="stylesheet" href="assets/css/module-css/pricing.css" />
+    <link rel="stylesheet" href="assets/css/module-css/faq.css" />
+    <link rel="stylesheet" href="assets/css/module-css/blog.css" />
+    <link rel="stylesheet" href="assets/css/module-css/newsletter.css" />
+    <link rel="stylesheet" href="assets/css/module-css/video.css" />
+    <link rel="stylesheet" href="assets/css/module-css/error.css" />
+    <link rel="stylesheet" href="assets/css/module-css/page-header.css" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+    <!--Start Preloader-->
+    <div class="loader js-preloader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!--End Preloader-->
+
+    <div class="chat-icon"><button type="button" class="chat-toggler"><i class="fa fa-comment"></i></button></div>
+    <!--Chat Popup-->
+    <div id="chat-popup" class="chat-popup">
+        <div class="popup-inner">
+            <div class="close-chat"><i class="fa fa-times"></i></div>
+            <div class="chat-form">
+                <p>Please fill out the form below and we will get back to you as soon as possible.</p>
+                <form action="assets/inc/sendemail.php" method="POST" class="contact-form-validated">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Text" required></textarea>
+                    </div>
+                    <div class="form-group message-btn">
+                        <button type="submit" class="thm-btn">Submit Now
+                            <span class="fas fa-arrow-right"></span>
+                        </button>
+                    </div>
+                    <div class="result"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+        <header class="main-header">
+            <div class="main-menu__top">
+                <div class="main-menu__top-inner">
+                    <ul class="list-unstyled main-menu__contact-list">
+                        <li>
+                            <div class="icon"><i class="icon-email"></i></div>
+                            <div class="text"><p><a href="mailto:connect@yugarit.com">connect@yugarit.com</a></p></div>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="icon-pin"></i></div>
+                            <div class="text"><p>Newtown, Salt Lake Sec-V, West Bengal 700102</p></div>
+                        </li>
+                    </ul>
+                    <p class="main-menu__top-welcome-text">Welcome to YUGARIT</p>
+                    <div class="main-menu__top-right">
+                        <p class="main-menu__social-title">Follow Us On:</p>
+                        <div class="main-menu__social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-menu">
+                <div class="main-menu__wrapper">
+                    <div class="main-menu__wrapper-inner">
+                        <div class="main-menu__left">
+                            <div class="main-menu__logo">
+                                <a href="index.html"><img src="assets/images/resources/logo-1.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="main-menu__main-menu-box">
+                            <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                            <ul class="main-menu__list">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li class="dropdown">
+                                    <a href="#">Our Work</a>
+                                    <ul class="shadow-box">
+                                                                                <li><a href="projects.html">Projects</a></li>
+                                        <li><a href="testimonials.html">Testimonials</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">Services</a>
+                                    <ul class="shadow-box">
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="ui-ux-design.html">UI/UX Design</a></li>
+                                        <li><a href="web-development.html">Web Development</a></li>
+                                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                                        <li><a href="software-development.html">Software Development</a></li>
+                                        <li><a href="cloud-cybersecurity.html">Cloud &amp; Cybersecurity</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="main-menu__right">
+                            <div class="main-menu__call">
+                                <div class="main-menu__call-icon"><i class="icon-call"></i></div>
+                                <div class="main-menu__call-content">
+                                    <p class="main-menu__call-sub-title">Call Anytime</p>
+                                    <h5 class="main-menu__call-number"><a href="tel:918789413353">+91 87894 13353</a></h5>
+                                </div>
+                            </div>
+                            <div class="main-menu__btn-box">
+                                <a href="contact.html" class="thm-btn">Get In Touch
+                                    <span class="fas fa-arrow-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="stricky-header stricked-menu main-menu">
+            <div class="sticky-header__content"></div>
+        </div>
+
+        <!--Page Header Start-->
+        <section class="page-header">
+            <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg);"></div>
+            <div class="container">
+                <div class="page-header__inner">
+                    <h3>Yu-Learn</h3>
+                    <div class="thm-breadcrumb__inner">
+                        <ul class="thm-breadcrumb list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><span class="icon-arrow-angle-pointing-to-right"></span></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><span class="icon-arrow-angle-pointing-to-right"></span></li>
+                            <li>Yu-Learn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Page Header End-->
+
+        <!--Project Details Start-->
+        <section class="project-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="project-details__left">
+                            <div class="project-details__img">
+                                <img src="assets/images/project/project-details-img-1.jpg" alt="Yu-Learn Platform">
+                            </div>
+
+                            <h3 class="project-details__title-1">About Yu-Learn</h3>
+                            <p class="project-details__text-1">Yu-Learn is Yugarit's modern Learning Management System — a cloud-hosted SaaS platform purpose-built for organisations, educational institutes, and independent trainers who need a single, powerful environment to create, manage, and deliver engaging online learning experiences. From a corporate L&amp;D team rolling out compliance training to a coaching institute running live batches, or a solo educator monetising their expertise, Yu-Learn provides everything needed to build a world-class digital learning operation — without the complexity or cost of stitching together multiple tools.</p>
+
+                            <h3 class="project-details__title-2">The Problem We Set Out to Solve</h3>
+                            <p class="project-details__text-2">Education and training delivery has shifted online — but most organisations still rely on a patchwork of disconnected tools: a video conferencing app for live classes, a Google Drive folder for study materials, a spreadsheet for tracking attendance, a third-party quiz tool for assessments, and email for certificates. This fragmentation creates administrative overhead, inconsistent learner experiences, and zero visibility into whether the training is actually working. Yu-Learn replaces this entire stack with one integrated platform — giving administrators, instructors, and learners a cohesive experience from day one, while giving management the analytics they need to measure outcomes and improve programme effectiveness continuously.</p>
+
+                            <div class="project-details__text-and-img">
+                                <p class="project-details__text-3">Yu-Learn is built around the instructor-learner relationship at its core. Instructors use an intuitive course builder to structure content across modules, upload videos, PDFs, quizzes, and assignments, and schedule live sessions — all within a single workflow. Learners get a clean, distraction-free dashboard showing enrolled courses, upcoming live classes, pending assignments, and their progress at a glance. The platform supports self-paced learning, instructor-led cohort batches, and blended formats — making it equally suitable for asynchronous corporate training and live classroom-style teaching.</p>
+                                <div class="project-details__text-img">
+                                    <img src="assets/images/project/project-details-text-img.jpg" alt="Yu-Learn dashboard">
+                                </div>
+                            </div>
+
+                            <h3 class="project-details__title-3">Learning Outcomes &amp; Platform Impact</h3>
+                            <p class="project-details__text-4">Organisations deploying Yu-Learn report measurable improvements in both operational efficiency and learner outcomes. Training administrators save an average of 12 hours per week by eliminating manual enrolment, attendance tracking, and certificate generation. Course completion rates on Yu-Learn are 47% higher compared to the same content delivered through email-based distribution, driven by progress nudges, gamified milestones, and the structured learning path experience. Certification programmes report a 91% pass rate among learners who complete the full course path — a direct result of the built-in formative assessment and gap-identification engine.</p>
+
+                            <div class="project-details__img-and-points">
+                                <div class="project-details__points-img">
+                                    <img src="assets/images/project/project-details-points-img.jpg" alt="Yu-Learn results">
+                                </div>
+                                <ul class="project-details__points list-unstyled">
+                                    <li>
+                                        <div class="icon"><span class="icon-right-arrow"></span></div>
+                                        <p>Intuitive course builder — video, PDFs, quizzes, and assignments in one workflow</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><span class="icon-right-arrow"></span></div>
+                                        <p>Live classes with integrated video conferencing, attendance, and session recording</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><span class="icon-right-arrow"></span></div>
+                                        <p>47% higher course completion rates vs. email-based content distribution</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><span class="icon-right-arrow"></span></div>
+                                        <p>Auto-generated certificates with custom branding and verifiable QR codes</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><span class="icon-right-arrow"></span></div>
+                                        <p>Learner analytics — progress, time-on-task, assessment scores, and drop-off points</p>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><span class="icon-right-arrow"></span></div>
+                                        <p>12 hours/week saved per admin through automated enrolment and reporting</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Key Features Section -->
+                            <h3 class="project-details__title-1" style="margin-top: 40px;">Core Platform Features</h3>
+                            <div class="row g-4" style="margin-top: 10px;">
+                                <div class="col-xl-6 col-lg-6">
+                                    <div style="padding: 25px; border: 1px solid #eee; border-radius: 8px; height: 100%;">
+                                        <div style="font-size: 2rem; color: var(--thm-base); margin-bottom: 12px;"><i class="fas fa-chalkboard"></i></div>
+                                        <h5 style="font-weight: 700; margin-bottom: 8px;">Course Creation &amp; Content Management</h5>
+                                        <p style="color: #666; font-size: 14px;">Drag-and-drop course builder with support for video lectures, PDFs, slideshows, SCORM packages, and embedded content. Organise learning into structured modules and lessons with prerequisite controls and drip scheduling.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div style="padding: 25px; border: 1px solid #eee; border-radius: 8px; height: 100%;">
+                                        <div style="font-size: 2rem; color: var(--thm-base); margin-bottom: 12px;"><i class="fas fa-video"></i></div>
+                                        <h5 style="font-weight: 700; margin-bottom: 8px;">Live Classes &amp; Webinars</h5>
+                                        <p style="color: #666; font-size: 14px;">Integrated live class scheduling with in-platform video conferencing, real-time attendance tracking, breakout rooms, polls, and automatic session recording — available to enrolled learners on demand post-session.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div style="padding: 25px; border: 1px solid #eee; border-radius: 8px; height: 100%;">
+                                        <div style="font-size: 2rem; color: var(--thm-base); margin-bottom: 12px;"><i class="fas fa-user-graduate"></i></div>
+                                        <h5 style="font-weight: 700; margin-bottom: 8px;">Student Enrolment &amp; Management</h5>
+                                        <p style="color: #666; font-size: 14px;">Bulk enrolment via CSV, self-registration with approval workflows, and cohort-based batch management. Role-based access for admins, instructors, and learners — with detailed profiles and learning histories.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div style="padding: 25px; border: 1px solid #eee; border-radius: 8px; height: 100%;">
+                                        <div style="font-size: 2rem; color: var(--thm-base); margin-bottom: 12px;"><i class="fas fa-tasks"></i></div>
+                                        <h5 style="font-weight: 700; margin-bottom: 8px;">Assessments &amp; Quizzes</h5>
+                                        <p style="color: #666; font-size: 14px;">Flexible question builder supporting MCQs, fill-in-the-blank, short answer, and file-upload assignments. Timed assessments, randomised question banks, auto-grading, and manual instructor review — all in one place.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div style="padding: 25px; border: 1px solid #eee; border-radius: 8px; height: 100%;">
+                                        <div style="font-size: 2rem; color: var(--thm-base); margin-bottom: 12px;"><i class="fas fa-certificate"></i></div>
+                                        <h5 style="font-weight: 700; margin-bottom: 8px;">Certification &amp; Badges</h5>
+                                        <p style="color: #666; font-size: 14px;">Auto-generate branded certificates on course completion or assessment pass. Verifiable QR codes on every certificate. Digital badges for milestone achievements that learners can share on LinkedIn and social profiles.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div style="padding: 25px; border: 1px solid #eee; border-radius: 8px; height: 100%;">
+                                        <div style="font-size: 2rem; color: var(--thm-base); margin-bottom: 12px;"><i class="fas fa-chart-bar"></i></div>
+                                        <h5 style="font-weight: 700; margin-bottom: 8px;">Analytics &amp; Progress Tracking</h5>
+                                        <p style="color: #666; font-size: 14px;">Real-time learner dashboards showing course progress, time-on-task, assessment scores, and completion status. Admin-level reports on cohort performance, drop-off points, and overall programme effectiveness.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="project-details__sidebar">
+                            <div class="project-details__information">
+                                <h3 class="project-details__information-title">Project Information</h3>
+                                <ul class="project-details__information-list list-unstyled">
+                                    <li>
+                                        <h4>Product :</h4>
+                                        <p>Yu-Learn — Learning Management System</p>
+                                    </li>
+                                    <li>
+                                        <h4>Category :</h4>
+                                        <p>SaaS / EdTech / LMS</p>
+                                    </li>
+                                    <li>
+                                        <h4>Tech Stack :</h4>
+                                        <p>React, Node.js, PostgreSQL, AWS, WebRTC, FFmpeg</p>
+                                    </li>
+                                    <li>
+                                        <h4>Suitable For :</h4>
+                                        <p>Corporates, institutes, coaching centres &amp; independent trainers</p>
+                                    </li>
+                                    <li>
+                                        <h4>Key Metrics :</h4>
+                                        <p>47% higher completion · 91% pass rate · 12 hrs/week admin saved</p>
+                                    </li>
+                                    <li>
+                                        <h4>Availability :</h4>
+                                        <p>Cloud-hosted SaaS — Starter, Professional &amp; Enterprise plans</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-details__get-started">
+                                <h3 class="service-details__get-started-title">Launch Your Learning Platform</h3>
+                                <p class="service-details__get-started-text">Ready to take your training and education delivery fully online? Get a personalised Yu-Learn demo — see the platform live with your use case in focus.</p>
+                                <ul class="service-details__get-started-points list-unstyled">
+                                    <li>
+                                        <div class="icon"><span class="icon-call"></span></div>
+                                        <p><a href="tel:918789413353">+91 87894 13353</a></p>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><span class="icon-email"></span></div>
+                                        <p><a href="mailto:connect@yugarit.com">connect@yugarit.com</a></p>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><span class="icon-pin"></span></div>
+                                        <p>Newtown, Salt Lake Sec-V, West Bengal 700102</p>
+                                    </li>
+                                </ul>
+                                <div class="service-details__get-started-btn-box">
+                                    <a href="contact.html" class="thm-btn">Request a Demo
+                                        <span class="fas fa-arrow-right"></span></a>
+                                </div>
+                            </div>
+
+                            <!-- Pricing tiers -->
+                            <div class="project-details__information" style="margin-top: 30px;">
+                                <h3 class="project-details__information-title">Pricing Plans</h3>
+                                <ul class="project-details__information-list list-unstyled">
+                                    <li>
+                                        <h4>Starter :</h4>
+                                        <p>₹2,999 / month — up to 100 learners, 10 courses</p>
+                                    </li>
+                                    <li>
+                                        <h4>Professional :</h4>
+                                        <p>₹6,999 / month — up to 500 learners, live classes &amp; analytics</p>
+                                    </li>
+                                    <li>
+                                        <h4>Enterprise :</h4>
+                                        <p>Custom pricing — unlimited learners, white-label &amp; API access</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="project-details__previous-next">
+                            <ul>
+                                <li>
+                                    <div class="icon">
+                                        <a href="yu-track.html"><span class="icon-right-arrow"></span></a>
+                                    </div>
+                                    <div class="text-box">
+                                        <a href="yu-track.html">Previous Project</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="text-box">
+                                        <a href="projects.html">All Projects</a>
+                                    </div>
+                                    <div class="icon">
+                                        <a href="projects.html"><span class="icon-right-arrow"></span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Project Details End-->
+
+                <!--Site Footer Start-->
+        <footer class="site-footer site-footer-two">
+            <div class="site-footer__bg" style="background-image: url(assets/images/backgrounds/site-footer-bg.jpg);"></div>
+            <div class="site-footer__shape-1 img-bounce-two"></div>
+            <div class="site-footer__shape-2 float-bob-y"></div>
+            <div class="site-footer__top">
+                <div class="container">
+                    <div class="site-footer__top-inner">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                                <div class="footer-widget__about">
+                                    <div class="footer-widget__about-logo">
+                                        <a href="index.html"><img src="assets/images/resources/logo-2.png" alt=""></a>
+                                    </div>
+                                    <p class="footer-widget__about-text">At Yugarit, we combine technology, innovation, and a growth-focused approach to deliver tailored solutions that perfectly meet your business needs.</p>
+                                    <div class="footer-widget__social">
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                                <div class="footer-widget__links">
+                                    <h4 class="footer-widget__title">Quick Links</h4>
+                                    <ul class="footer-widget__links-list list-unstyled">
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="projects.html">Our Projects</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                                <div class="footer-widget__services">
+                                    <h4 class="footer-widget__title">Services</h4>
+                                    <ul class="footer-widget__links-list list-unstyled">
+                                        <li><a href="cloud-cybersecurity.html">Cloud &amp; Cybersecurity</a></li>
+                                        <li><a href="software-development.html">Software Development</a></li>
+                                        <li><a href="web-development.html">Web Development</a></li>
+                                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                                        <li><a href="ui-ux-design.html">UI/UX Design</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                                <div class="footer-widget__contact">
+                                    <h3 class="footer-widget__title">Contact Us</h3>
+                                    <ul class="footer-widget__contact-list list-unstyled">
+                                        <li>
+                                            <div class="icon"><span class="icon-pin"></span></div>
+                                            <p>Newtown, Salt Lake Sec-V, West Bengal 700102</p>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><span class="icon-call"></span></div>
+                                            <p><a href="tel:918789413353">+91 87894 13353</a></p>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><span class="icon-email"></span></div>
+                                            <p><a href="mailto:connect@yugarit.com">connect@yugarit.com</a></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer__bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="site-footer__bottom-inner">
+                                <div class="site-footer__copyright">
+                                    <p class="site-footer__copyright-text">&copy; 2026 Yugarit. All Rights Reserved.</p>
+                                </div>
+                                <div class="site-footer__bottom-menu-box">
+                                    <ul class="list-unstyled site-footer__bottom-menu">
+                                        <li><a href="about.html">Terms of Service</a></li>
+                                        <li><a href="about.html">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Site Footer End-->
+
+
+    </div><!-- /.page-wrapper -->
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="assets/images/resources/logo-2.png" width="150" alt="" /></a>
+            </div>
+            <div class="mobile-nav__container"></div>
+            <ul class="mobile-nav__contact list-unstyled">
+                <li><i class="fa fa-envelope"></i><a href="mailto:connect@yugarit.com">connect@yugarit.com</a></li>
+                <li><i class="fas fa-phone"></i><a href="tel:918789413353">+91 87894 13353</a></li>
+            </ul>
+            <div class="mobile-nav__top">
+                <div class="mobile-nav__social">
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-square"></a>
+                    <a href="#" class="fab fa-pinterest-p"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Popup -->
+    <div class="search-popup">
+        <div class="color-layer"></div>
+        <button class="close-search"><span class="far fa-times fa-fw"></span></button>
+        <form method="post" action="contact.html">
+            <div class="form-group">
+                <input type="search" name="search-field" value="" placeholder="Search Here" required="">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </form>
+    </div>
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
+        <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
+        <span class="scroll-to-top__text"> Go Back Top</span>
+    </a>
+
+    <script src="assets/js/jquery-latest.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jarallax.min.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.circle-progress.min.js"></script>
+    <script src="assets/js/knob.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/wNumb.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/jquery.circleType.js"></script>
+    <script src="assets/js/jquery.lettering.min.js"></script>
+    <script src="assets/js/jquery.fittext.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/marquee.min.js"></script>
+    <script src="assets/js/countdown.min.js"></script>
+    <script src="assets/js/jquery-sidebar-content.js"></script>
+    <script src="assets/js/twentytwenty.js"></script>
+    <script src="assets/js/jquery.event.move.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/gsap/gsap.js"></script>
+    <script src="assets/js/gsap/ScrollTrigger.js"></script>
+    <script src="assets/js/gsap/SplitText.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <!-- WhatsApp Sticky Button -->
+    <a href="https://wa.me/918789413353" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            width: 58px;
+            height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+            z-index: 9999;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+            color: #fff;
+        }
+    </style>
+</body>
+
+</html>
