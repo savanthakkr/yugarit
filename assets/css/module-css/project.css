@@ -851,7 +851,7 @@
 }
 
 .project-details__text-img img {
-    width: auto;
+    width: 100%;
     border-radius: var(--itzone-bdr-radius);
 }
 
